@@ -1,0 +1,43 @@
+header{
+    height: 100;
+    padding-top:10px ;
+    border: 5px;
+    border-color: black;
+    background-color: aqua;
+    font-size: 40px;
+    text-align: center;
+}
+section{
+    width = 800px;
+    height= 600px;
+    border: 4px solid;
+    float: right;
+    margin-top:20px ;
+    border-color:darkslateblue;
+    text-align: justify;
+    font-size: 20px;
+}
+.bigbox{
+    width: 500px;
+    height: 900px;
+    border: 6px;
+    border-color: gold;
+    float: right;
+}
+.imgs
+{
+    width: 600px;
+    height: 300px;
+    border: 5px dotted;
+    border-color: deeppink;
+    float: right;
+    margin-right: 30px;
+}
+#topbox{
+    margin-top: 10px;
+    float: right;
+}
+#bottombox{
+    margin-top: 20px;
+    float: right;
+}
