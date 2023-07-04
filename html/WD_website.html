@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My OTT Platform</title>
+  <style>
+    /* CSS styles for the website */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: beiges;
+      color: #0b0b0b;
+    }
+    header {
+      background-color: #e50914;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    nav {
+      background-color: #000;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      text-decoration: none;
+      margin: 10px;
+      color: #fff;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    footer {
+      background-color: #e50914;
+      padding: 20px;
+      text-align: center;
+    }
+    .video {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .video .thumbnail {
+      position: relative;
+      width: 250px;
+      height: 140px;
+      margin: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      background-color: #333;
+    }
+    .video .thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .video .thumbnail:hover {
+      transform: scale(1.1);
+    }
+    .video .title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px;
+      margin: 0;
+      font-weight: bold;
+    }
+    
+    header, nav, main, footer {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .video .thumbnail {
+      width: 275px;
+      height: 155px;
+    }
+    .video .title {
+      font-size: 14px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My OTT Platform</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Movies</a>
+    <a href="#">TV Shows</a>
+    <a href="#">Documentaries</a>
+    <a href="#">My Account</a>
+  </nav>
+  <main>
+    <h2>SANDALWOOD</h2>
+    <div class="video">
+      <div class="thumbnail">
+        <a href="https://www.primevideo.com/detail/KGF-Chapter-2-Kannada/0TAARXHU6YZR574455ZKCKYSOC">
+        <img src="https://static.toiimg.com/photo/99482854.cms" alt="Video 5"></a>
+        <div class="title">KGF 2</div>
+      </div>
+      <div class="thumbnail">
+        <a href="https://www.primevideo.com/detail/Kantara---A-Legend/0L2CP3W1JZB3EE2KRZYSOXF221">
+        <img src="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2022/11/18/211442-kantara-22.jpg?itok=mFYXIgki" alt="Video 6"></a>
+        <div class="title">Kantara
+          </div>
+      </div>
+      <div class="thumbnail">
+        <a href="https://www.zee5.com/movies/details/vikrant-rona/0-0-1z5206541?utm_source=google_web&utm_medium=watchaction&utm_campaign=google_watch&utm_content=vikrant_rona">
+        <img src="https://cdn.123telugu.com/content/wp-content/uploads/2022/07/vikrant-m.jpg" alt="Vikrant Rona"></a>
+        <div class="title">Vikrant Rona</div>
+      </div>
+    </div>
+    <h2>BOLLYWOOD</h2>
+    <div class="video">
+      <div class="thumbnail">
+        <a href ="https://www.primevideo.com/detail/Pathaan/0FIVK55HUFIIADBSNC585CZFDP">
+        <img src="https://images.mid-day.com/images/images/2023/jan/Pathaan-review_d.jpg" alt="Video 11"></a>
+        <div class="title">Pathaan</div>
+      </div>
+      <div class="thumbnail">
+        <a href="https://www.netflix.com/in/title/81382254?source=35&preventIntent=true">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00347237-yuaaesmusm-landscape.jpg" alt="Video 12"></a>
+        <div class="title">Tu jhoothi mein makkar</div>
+      </div>
+      <div class="thumbnail">
+        <a href="https://www.netflix.com/in/title/81514149?source=35&preventIntent=true">
+        <img src="data:image/jpeg;base64,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" alt="Video 13"></a>
+        <div class="title"> An Action Hero</div>
+      </div>
+    </div>
+    <h2>HOLLYWOOD</h2>
+    <div class="video">
+      <div class="thumbnail">
+        <a href="https://www.netflix.com/in/title/81161626?source=35&preventIntent=true">
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/RedNotice_Main_Vertical_27x40__1200x768.jpeg?size=1200:675" alt="Video 5"></a>
+        <div class="title">Red Notice</div>
+      </div>
+      <div class="thumbnail">
+        <a href="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx2B1Ulpj08kO4GFXOHg6SIazjQNHKJrM9pw&usqp=CAU" alt="Video 6"></a>
+        <div class="title">Thor: Love and Thunder
+          </div>
+      </div>
+      <div class="thumbnail">
+        <a href="https://www.netflix.com/in/title/81098494?source=35&preventIntent=true">
+        <img src="https://www.pinkvilla.com/images/2023-06/1649626176_.jpg" alt="Video 7"></a>
+        <div class="title">Extraction 2</div>
+      </div>
+    </div>
+    <h2>ANIMES</h2>
+    <div class="video">
+      <div class="thumbnail">
+        <a href="https://zoroto.tv/watch/vinland-saga-season-2-kwo44/ep-1">
+        <img src="https://m.economictimes.com/thumb/msid-101140242,width-1200,height-675,resizemode-4,imgsize-48556/will-there-be-vinland-saga-season-3-release-date-cast-plot-and-all-we-know-of-the-manga-series.jpg" alt="Video 8"></a>
+        <div class="title">Vinland Saga</div>
+      </div>
+      <div class="thumbnail">
+        <a href="https://sanji.to/watch/one-piece-100?c_id=2449152&c_type=episode">
+        <img src="https://www.hindustantimes.com/ht-img/img/2023/03/28/1600x900/One_Piece_Wano_1679966485338_1679966497954_1679966497954.webp">
+        </img>" alt="Video 9"></a>
+        <div class="title">One Piece</div>
+      </div>
+      <div class="thumbnail">
+        <a href="https://sanji.to/watch/kimetsu-no-yaiba-movie-mugen-ressha-hen-15763?ep=67753">
+        <img src="https://www.hindustantimes.com/ht-img/img/2023/06/18/550x309/demon_slayer_season_3_release_1681007034048_1687103325363.jpg" alt="Video 10"></a>
+        <div class="title">Demon Slayer</div>
+      </div>
+    </div>
+   
+  </main>
+  <footer>
+    <p>&copy; 2023 My OTT Platform. All rights reserved.</p>
+  </footer>
+</body>
+</html>
